@@ -4,27 +4,47 @@
 <head>
     <meta charset="utf-8">
     <title>CSS Animations</title>
-    <link rel="text/javascript" src="main.js" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script rel="text/javascript" src="main.js"></script>
 
 </head>
 
 <body>
+    <h1 class="title"> Animate.CSS Examples</h1>
     <div class="exampleOne col-md-12">
-        <h1 class="animated infinite bounce">Bounce, Bounce, Bounce</h1>
+        <h1 id="bounce" class="animated infinite bounce">Bounce, Bounce, Bounce</h1>
     </div>
     <div class="exampleTwo col-md-12">
-        <h1 class="animated infinite wobble">Wobble, Wobble, Wobble</h1>
+        <h1 id="wobble" class="animated infinite wobble">Wobble, Wobble, Wobble</h1>
+        <button id="stopWobb">
+                no more wobble
+        </button>
     </div>
+
     <div class="exampleThree col-md-12">
-        <h1 class="animated infinite swing">Swing, Swing, Swing</h1>
+        <h1 id="swing" class="animated infinite swing">Swing, Swing, Swing</h1>
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <div>
+        <h1 class="title">Createjs and Canvas Element</h1>
+        <canvas id="makeCircle" width="500" height="300"></canvas>
+        <button id="drawCircle">
+                Draw A Circle
+        </button>
+    </div>
+    <div id="draw">
+        <canvas id="fingerPaint" width="500" height="300"></canvas>
+
+    </div>
+    <div>
+
+    </div>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
